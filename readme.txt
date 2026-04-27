@@ -6,3 +6,4 @@ fifth line
 sixth line
 seventh line
 featureブランチでの変更
+featureブランチ専用の変更
