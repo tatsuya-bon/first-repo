@@ -9,3 +9,4 @@ featureブランチでの変更
 featureブランチ専用の変更
 GitHub側で追加した1行
 GUI変更テスト2
+test-branch変更
