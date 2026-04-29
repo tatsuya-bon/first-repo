@@ -1,17 +1,19 @@
-title := ""
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
 ; =========================
-; 設定
+; グローバル定義（設定）
 ; =========================
 global InputBuffer := ""
 global TargetHwnd := 0
 global MenuIsOpen := false
 
-global TempLogFile := "C:\Users\mezzs\OneDrive - 株式会社BON\SP_AIログ\ChatGPT\temp_chatgpt_log.txt"
+; 定数扱いのパスを先に定義し、利用箇所は既存変数名を維持
+global ChatGptLogDir := "C:\Users\mezzs\OneDrive - 株式会社BON\SP_AIログ\ChatGPT"
+global TempLogFile := ChatGptLogDir "\temp_chatgpt_log.txt"
+global MenuTitle := "数値メニュー"
 
-global MenuGui := Gui("+AlwaysOnTop -MinimizeBox -MaximizeBox", "数値メニュー")
+global MenuGui := Gui("+AlwaysOnTop -MinimizeBox -MaximizeBox", MenuTitle)
 MenuGui.SetFont("s10", "Meiryo")
 
 global TxtCode := MenuGui.AddText("w360", "入力：")
