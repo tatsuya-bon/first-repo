@@ -1,3 +1,4 @@
+; refactor test
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
@@ -8,9 +9,9 @@ global InputBuffer := ""
 global TargetHwnd := 0
 global MenuIsOpen := false
 
-; 定数扱いのパスを先に定義し、利用箇所は既存変数名を維持
-global ChatGptLogDir := "C:\Users\mezzs\OneDrive - 株式会社BON\SP_AIログ\ChatGPT"
-global TempLogFile := ChatGptLogDir "\temp_chatgpt_log.txt"
+; 定数相当の設定値
+global ChatGPTLogDir := "C:\Users\mezzs\OneDrive - 株式会社BON\SP_AIログ\ChatGPT"
+global TempLogFile := ChatGPTLogDir "\temp_chatgpt_log.txt"
 global MenuTitle := "数値メニュー"
 
 global MenuGui := Gui("+AlwaysOnTop -MinimizeBox -MaximizeBox", MenuTitle)
