@@ -1,4 +1,5 @@
 ; refactor test
+; 3rd practice: understanding git flow with Codex
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
